@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/gravity"
+    style="@style/CardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="#F1DFEC"
+    android:orientation="vertical"
+    tools:actionBarNavMode="standard"
+    tools:context=".MainActivity">
+<!--
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="#C85EEF"
+        android:gravity="center"
+        android:text="Currency converter"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+        -->
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:text="This app allows user to convert different currencies in Rs."
+        android:textColor="#850808"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="86dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/editTextTextPersonName2"
+            android:layout_width="215dp"
+            android:layout_height="43dp"
+            android:ems="10"
+            android:hint="Enter value"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="189dp"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:text="0 Rs."
+            android:textSize="24sp"
+            app:layout_marginBaseline="@dimen/cardview_compat_inset_shadow"
+            tools:layout_editor_absoluteX="222dp"
+            tools:layout_editor_absoluteY="163dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:onClick="fromDollar"
+            android:text="From $"
+            app:backgroundTint="#E16139"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="256dp" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8sp"
+            android:onClick="fromEuro"
+            android:text="From euro"
+            app:backgroundTint="#BF2222"
+            tools:layout_editor_absoluteX="131dp"
+            tools:layout_editor_absoluteY="256dp" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+            android:onClick="fromDhiram"
+            android:text="From Dhiram"
+            app:backgroundTint="#CD7010"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="256dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8sp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="168dp"
+            android:layout_height="51dp"
+            android:layout_margin="8sp"
+            android:onClick="fromYen"
+            android:text="From Yen"
+            app:backgroundTint="#1F065C"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="321dp" />
+
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="179dp"
+            android:layout_height="52dp"
+            android:layout_margin="8sp"
+            android:onClick="fromCanadian"
+            android:text="From canadian $"
+            app:backgroundTint="#451506"
+            tools:layout_editor_absoluteX="196dp"
+            tools:layout_editor_absoluteY="321dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/media_handler"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="231dp" />
+
+</LinearLayout>
